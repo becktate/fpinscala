@@ -49,7 +49,11 @@ import List._;
     println("Exercise 8: what happens if you call foldright with Nils and Cons?  " + foldRight(List(1,2,3), Nil:List[Int])(Cons(_ , _)))
     println()
 
-    println("Exercise 9: ")
+    println("Exercise 9: length(List(1, 2, 3, 4, 5, 6) == 6?  " + length(List(1, 2, 3, 4, 5, 6)))
+    println("Exercise 9: length(List(6) == 1?  " + length(List(6)))
+    println("Exercise 9: length(Nil:List[Int] == 6?  " + length(Nil: List[Int]))
+    println()
+
   }
 }
 
