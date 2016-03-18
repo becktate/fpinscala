@@ -1,12 +1,12 @@
 package fpinscala.gettingstarted
 
 import fpinscala.gettingstarted.PolymorphicFunctions._
-import org.scalatest.{FlatSpec, ShouldMatchers}
+import org.scalatest.FlatSpec
 
 /**
  * Created by Tate on 3/18/2016.
  */
-class GettingStartedTests extends FlatSpec with ShouldMatchers {
+class GettingStartedTests extends FlatSpec {
   "IsSorted" should "return true when an Array of Ints is sorted according to the sort function" in {
       val arrayToTest = Array(1, 24, 34, 35, 100, 200, 300, 840)
       assert(isSorted(arrayToTest, (x: Int, y:Int) => y >= x))
