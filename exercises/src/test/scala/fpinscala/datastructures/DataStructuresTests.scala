@@ -92,7 +92,13 @@ class DataStructuresTests extends FlatSpec {
     assert(length(List(1)) === 1)
   }
 
-  "Exercise 9: Multi Item Case: length(List(1, 2, 3))" should "return 3" in {
-    assert(length(List(1, 2, 3)) === 3)
+  "Exercise 10: FoldLeft Sum" should "return 10" in {
+    val sum = foldLeft(List(1,2,3,4), 0)((x:Int,y:Int) => x + y)
+    assert( sum === 10)
+  }
+
+  "Exercise 10: FoldLeft Product" should "return 24" in {
+    val product = foldLeft(List(1.0,2.0,3.0,4.0), 1.0)((x:Double, y:Double) => x * y)
+    assert(product === 24.0)
   }
 }
